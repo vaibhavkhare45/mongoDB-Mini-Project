@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+        input, textarea{
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>Write new chat</h3>
+    <form method="POST" action="/chats">
+        <input placeholder="who are you?" name="from">
+        <br>
+        <br>
+        <textarea name="masg">Write your message here..</textarea>
+        <br>
+        <br>
+        <input placeholder="Add receiver" name="to">
+        <br>
+        <br>
+        <button>send</button>
+
+    </form>
+</body>
+</html>
